@@ -1,1 +1,68 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TraceX Dashboard</title>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 0;
+      background: #f4f4f4;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    .container {
+      padding: 20px;
+    }
+    button {
+      padding: 10px 15px;
+      background: #3498db;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background: #2980b9;
+    }
+    .card {
+      background: white;
+      padding: 15px;
+      margin-top: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px gray;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>TraceX Dashboard 🚀</h1>
+</header>
+
+<div class="container">
+
+  <button onclick="addItem()">Add Lost Item</button>
+
+  <div class="card">
+    <h3 id="count">Total Reports: 0</h3>
+  </div>
+
+</div>
+
+<script>
+let count = 0;
+
+function addItem() {
+  count++;
+  document.getElementById("count").innerText = "Total Reports: " + count;
+}
+</script>
+
+</body>
+</html>
